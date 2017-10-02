@@ -97,12 +97,12 @@ namespace Application
 
         protected override double Cost(Position node, Position next)
         {
-            //var dx = Math.Abs(node.X - next.X);
-            //var dy = Math.Abs(node.Y - next.Y);
+            var dx = Math.Abs(node.X - next.X);
+            var dy = Math.Abs(node.Y - next.Y);
 
             //return Math.Sqrt(dx + dy);
 
-            return 1;
+            return dx + dy;
         }
 
         protected override void Dump(IEnumerable<Position> path)
