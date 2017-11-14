@@ -13,6 +13,7 @@ pipeline {
         sh 'ls -la'
         sh 'id'
         sh 'env'
+        sh 'dotnet build --no-cache'
       }
     }
   }
