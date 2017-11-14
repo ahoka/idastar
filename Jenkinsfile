@@ -9,11 +9,12 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'pwd'
-        sh 'ls -la'
-        sh 'id'
-        sh 'env'
         sh 'dotnet build --no-cache'
+      }
+    }
+    stage('Test') {
+      steps {
+        sh 'dotnet test'
       }
     }
   }
