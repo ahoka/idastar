@@ -11,7 +11,7 @@ pipeline {
       steps {
         sh 'pwd'
         sh 'ls -la'
-        sh 'dotnet build --no-cache'
+        sh 'id'
       }
     }
   }
