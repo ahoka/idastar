@@ -15,4 +15,7 @@ pipeline {
       }
     }
   }
+  environment {
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE = 'true'
+  }
 }
