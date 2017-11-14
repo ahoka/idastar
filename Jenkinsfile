@@ -12,6 +12,7 @@ pipeline {
         sh 'pwd'
         sh 'ls -la'
         sh 'id'
+        sh 'env'
       }
     }
   }
