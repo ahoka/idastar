@@ -3,7 +3,7 @@ pipeline {
     docker {
       image 'microsoft/dotnet:2.0-sdk'
       args '-v /.dotnet:/root/.dotnet'
-      customWorkspace "/b/${BRANCH_NAME}"
+      customWorkspace "/b/${JOB_NAME}/${BUILD_NUMBER}"
     }
     
   }
